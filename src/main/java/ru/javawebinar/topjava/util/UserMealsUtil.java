@@ -35,5 +35,6 @@ public class UserMealsUtil {
                 .map(um -> new UserMealWithExceed(um.getDateTime(), um.getDescription(), um.getCalories(),
                         caloriesSumByDate.get(um.getDateTime().toLocalDate())> caloriesPerDay))
                 .collect(Collectors.toList());
+//;h;ho;hio;
     }
 }
