@@ -26,8 +26,13 @@ public class AuthorizedUser extends org.springframework.security.core.userdetail
         return userTo;
     }
 
+    public static AuthorizedUser safeGet() {
+        return safeGet();
+    }
     @Override
     public String toString() {
         return userTo.toString();
     }
+
+
 }
